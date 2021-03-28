@@ -23,8 +23,8 @@ app.post("/failure",function(req,res){
   res.redirect("/");
 })
 mailchimp.setConfig({
- apiKey: "495feabf178277734173cd0de48d9f69-us1",
- server: "us1"
+ apiKey: "enter_your_api_key",
+ server: "_enter_server"
 });
 
 app.post("/", function (req,res) {
@@ -32,7 +32,7 @@ app.post("/", function (req,res) {
   const firstName = req.body.firstName;
   const secondName = req.body.secondName;
   const email = req.body.email;
-  const listId = "1237249591";
+  const listId = "enter list id";
 
 // // //Uploading the data to the server
 const run = async () => {
